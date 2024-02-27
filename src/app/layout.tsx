@@ -21,11 +21,14 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <Providers>
-          <main className="flex flex-col h-screen justify-between">
+          <main>
             <Header />
-            {children}
+              <div style={{minHeight: '90vh'}}>
+                {children}
+              </div>
             <Footer />
-          </main>
+            </main>
+     
         </Providers>
       </body>
     </html>

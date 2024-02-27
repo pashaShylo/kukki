@@ -46,6 +46,7 @@ export default function App() {
       shouldHideOnScroll
       isBordered
       onMenuOpenChange={setIsMenuOpen}
+      isBlurred
     >
       <NavbarContent>
         <NavbarMenuToggle

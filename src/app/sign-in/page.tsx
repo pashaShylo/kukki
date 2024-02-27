@@ -29,7 +29,7 @@ export default function App() {
   console.log(avatar);
 
   return (
-    <div className="max-w-[1024px] mx-auto flex flex-col gap-4 mt-12 mb-12">
+    <div className="max-w-[1024px] mx-auto items-center flex flex-col gap-4 mt-12 mb-12">
       <h1 className="text-3xl font-bold text-center ">Реєстрація</h1>
       <Input size="sm" type="email" label="Пошта" className="w-96" />
 
@@ -114,22 +114,27 @@ export default function App() {
         )}
       />
        <Autocomplete
+         sx={{width: 384}}
         options={heights}
         renderInput={(params) => <TextField    variant="standard" {...params} label="Зріст" />}
       />
       <Autocomplete
+        sx={{width: 384}}
         options={weights}
         renderInput={(params) => <TextField    variant="standard" {...params} label="Вага" />}
       />
       <Autocomplete
+        sx={{width: 384}}
         options={fitnessLevels}
         renderInput={(params) => <TextField    variant="standard"{...params} label="Фізична підготовка" />}
       />
       <Autocomplete
+        sx={{width: 384}}
         options={teamSolo}
         renderInput={(params) => <TextField    variant="standard" {...params} label="Команда чи соло" />}
       />
       <Autocomplete
+        sx={{width: 384}}
         options={genders}
         renderInput={(params) => <TextField    variant="standard"{...params} label="Стать" />}
       />

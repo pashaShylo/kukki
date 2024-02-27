@@ -29,7 +29,7 @@ export default function App() {
   console.log(avatar);
 
   return (
-    <div className="max-w-[1024px] mx-auto flex flex-col gap-4 mt-12 mb-12">
+    <div className="max-w-[1024px] mx-auto flex items-center flex-col gap-4 mt-12 mb-12">
       <h1 className="text-3xl font-bold text-center ">Налаштування аккаунту</h1>
       <Input size="sm" type="email" label="Пошта" className="w-96" value='kukki@gmail.com' />
 
@@ -115,27 +115,32 @@ export default function App() {
         )}
       />
        <Autocomplete
+         sx={{width: 384}}
         options={heights}
         value={heights[3]}
         renderInput={(params) => <TextField     variant="standard" {...params} label="Зріст" />}
       />
       <Autocomplete
+        sx={{width: 384}}
         options={weights}
         value={weights[1]}
         renderInput={(params) => <TextField     variant="standard" {...params} label="Вага" />}
       />
       <Autocomplete
         options={fitnessLevels}
+        sx={{width: 384}}
         value={fitnessLevels[2]} 
         renderInput={(params) => <TextField   variant="standard"{...params} label="Фізична підготовка" />}
       />
       <Autocomplete
         options={teamSolo}
+        sx={{width: 384}}
         value={teamSolo[1]}
         renderInput={(params) => <TextField  variant="standard" {...params} label="Команда чи соло" />}
       />
       <Autocomplete
         options={genders}
+        sx={{width: 384}}
         value={genders[0]}   
         renderInput={(params) => <TextField variant="standard"{...params} label="Стать" />}
       />
